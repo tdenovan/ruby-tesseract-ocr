@@ -47,25 +47,25 @@ class Iterator
 			BoundingBox.new(@iterator.bounding_box(@level))
 		end
 
-		memoize
-		def binary_image
-			@iterator.get_binary_image(@level) rescue nil
-		end
-
-		memoize
-		def image
-			@iterator.get_image(@level) rescue nil
-		end
-
-		memoize
-		def baseline
-			Baseline.new(@iterator.baseline(@level))
-		end
-
-		memoize
-		def orientation
-			Orientation.new(@iterator.orientation)
-		end
+    # memoize
+    # def binary_image
+    #   @iterator.get_binary_image(@level) rescue nil
+    # end
+    #
+    # memoize
+    # def image
+    #   @iterator.get_image(@level) rescue nil
+    # end
+    #
+    # memoize
+    # def baseline
+    #   Baseline.new(@iterator.baseline(@level))
+    # end
+    #
+    # memoize
+    # def orientation
+    #   Orientation.new(@iterator.orientation)
+    # end
 
 		memoize
 		def text
